@@ -1,0 +1,5 @@
+[user]
+	name = gskorokhod
+	email = gs248@st-andrews.ac.uk
+[core]
+	autocrlf = input
