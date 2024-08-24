@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  qbittorrentvpn:
+    container_name: qbittorrentvpn
+    image: dyonr/qbittorrentvpn
+    privileged: true
+    sysctls:
+      - net.ipv6.conf.all.disable_ipv6=0
+    environment:
+      - VPN_ENABLED=yes
+      - VPN_TYPE=wireguard
+      - LAN_NETWORK=192.168.0.0/24,10.10.0.0/24
+      - PUID=1005
+      - PGID=1003
+    volumes:
+      - /data/config/qbittorrent:/config
+      - /data/media:/data/media
+    ports:
+      - "8081:8080"
+    restart: unless-stopped
+
