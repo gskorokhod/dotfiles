@@ -10,11 +10,14 @@ DEST_DIR=$1
 DOTFILES_PATH="$HOME/Utilities/dotfiles"
 SCRIPTS_PATH="$HOME/Utilities/scripts"
 DOCKER_FILES_PATH="$HOME/Utilities/services"
+PACKAGES_PATH="$HOME/Utilities/packages"
 
 FILES=(
 	"$DOCKER_FILES_PATH"
 	"$DOTFILES_PATH"
 	"$SCRIPTS_PATH"
+	"$PACKAGES_PATH"
+	# Add as neded
 )
 
 if [ ! -d "$DEST_DIR" ]; then

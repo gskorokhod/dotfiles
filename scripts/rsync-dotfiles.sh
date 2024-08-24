@@ -11,6 +11,7 @@ PRIVATE_FILES=(
 	"$HOME/./.config"
 	"$HOME/./.mozilla"
 	"$HOME/./.tmux.conf"
+	"$HOME/./.local/bin"
 )
 
 # Regexes to exclude for the above files
