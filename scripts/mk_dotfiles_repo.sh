@@ -7,7 +7,7 @@ if [ "$#" -ne 1 ]; then
 fi
 
 DEST_DIR=$1
-DOTFILES_PATH="$HOME/Utilities/dotfiles"
+DOTFILES_PATH="$HOME/Utilities/dotfiles/dotfiles_public"
 SCRIPTS_PATH="$HOME/Utilities/scripts"
 DOCKER_FILES_PATH="$HOME/Utilities/services"
 # PACKAGES_PATH="$HOME/Utilities/packages"
